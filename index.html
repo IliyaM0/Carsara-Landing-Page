@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carsara | Your Carshop</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-navy">
+    <!-- start nav -->
+    <section>
+        <div class="container">
+            <nav
+                class="d-flex font-montserrat justify-content-between align-items-center border border-1 rounded-pill py-1 px-2 mt-3">
+                <ul class="nav small main_nav align-items-center d-none d-lg-flex">
+                    <li class="nav-item position-relative">
+                        <a class="btn btn-sm font-montserrat btn-orange rounded-pill" href="#">Car Inspection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-orange">+ Car Sales</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Car Prices</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="bi bi-list fs-2 p-0 border-0 text-light"></i>
+                </button>
+                <div class="offcanvas offcanvas-start bg-dark-navy d-lg-none" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header d-flex justify-content-between align-content-center m-3">
+                        <a href="#">
+                            <img src="imgs/Group 1.png" width="150px" alt="logo" />
+                        </a>
+                        <button type="button" class="bg-transparent text-light border-0" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                            <i class="bi bi-x-circle fs-3"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav flex-column pb-1">
+                            <li class="nav-item position-relative pb-3">
+                                <a class="nav-link text-orange" href="#">Car Inspection</a>
+                            </li>
+                            <li class="nav-item pb-3">
+                                <a href="#" class="nav-link text-white">+ Car Sales</a>
+                            </li>
+                            <li class="nav-item pb-3">
+                                <a href="" class="nav-link text-white">Car Prices</a>
+                            </li>
+                            <li class="nav-item pb-3">
+                                <a href="" class="nav-link text-white">Contact Us</a>
+                            </li>
+                            <li class="nav-item pb-3">
+                                <a href="" class="nav-link text-white">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="">
+                    <img src="imgs/Group 1.png" width="150px" alt="logo" />
+                </a>
+            </nav>
+        </div>
+    </section>
+    <!-- end nav  -->
+
+    <!-- start header  -->
+    <header class="py-5 my-0 my-lg-5 position-relative">
+        <div class="container">
+            <div class="row text-white justify-content-center">
+                <div class="col-10 col-lg-6">
+                    <div class="h-100 d-flex align-content-center justify-content-center flex-column">
+                        <div class="h4 lh-lg font-montserrat">
+                            Buy and sell cars easily and safely with 
+                            <a href="#" class="text-decoration-none text-orange fw-bold">Carsara</a>
+                            – your trusted car marketplace
+                        </div>
+                        <p class="font-inter lh-lg mt-4 col-12 col-lg-10 fs-6">
+                            Buying a car requires the guidance of experienced professionals to inspect paint, mechanics, and bodywork. With Carsara’s on-site inspection service, enjoy a secure and hassle-free purchase experience.
+                        </p>
+                        <img src="imgs/head-img2.png" class="position-absolute d-none d-lg-block img-over-left"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="col-10 col-lg-6">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="imgs/head-car.png" class="img-fluid" style="transform: rotate(deg)" alt="car" />
+                        <img src="imgs/head-img1.png" class="position-absolute img-over-right" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- start services  -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="row g-3 justify-content-center">
+                <div class="col-11 col-sm-6 col-lg-3">
+                    <div class="card-service h-100 position-relative bg-dark-navy text-white p-3">
+                        <img src="imgs/service1.png" width="140" alt="" />
+                        <h5 class="text-orange pt-3 font-montserrat">
+                            Car Inspection
+                        </h5>
+                        <ul class="list-unstyled small font-inter">
+                            <li class="py-1 small">
+                                - Professional inspection of car paint,
+                                body, and mechanics
+                            </li>
+                            <li class="py-1 small">
+                                - Accurate car valuation
+                            </li>
+                            <li class="py-1 small">
+                                - With a written and certified report
+                            </li>
+                        </ul>
+                        <div
+                            class="service-rounded-box bg-navy d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 end-0">
+                            <span
+                                class="border border-1 border-light rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right-circle fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-6 col-lg-3">
+                    <div class="card-service h-100 position-relative bg-dark-navy text-white p-3">
+                        <img src="imgs/service2.png" width="140" alt="" />
+                        <h5 class="text-orange pt-3 font-montserrat">
+                            Car Sales
+                        </h5>
+                        <ul class="list-unstyled small font-inter">
+                            <li class="py-1 small">- Custom Car Sales</li>
+                            <li class="py-1 small">
+                                - Dedicated Sales Consultant Support
+                            </li>
+                            <li class="py-1 small">
+                                - Accurate Car Inspection and Valuation
+                            </li>
+                            <li class="py-1 small">
+                                - Negotiation with Buyers
+                            </li>
+                        </ul>
+                        <div
+                            class="service-rounded-box bg-navy d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 end-0">
+                            <span
+                                class="border border-1 border-light rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right-circle fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-6 col-lg-3">
+                    <div class="card-service h-100 position-relative bg-dark-navy text-white p-3">
+                        <img src="imgs/service3.png" width="140" alt="" />
+                        <h5 class="text-orange pt-3 font-montserrat">
+                            Car Purchase
+                        </h5>
+                        <ul class="list-unstyled small font-inter">
+                            <li class="py-1 small">
+                                - Buying and Selling Cars
+                            </li>
+                            <li class="py-1 small">
+                                - Current Price of Used Cars
+                            </li>
+                            <li class="py-1 small">
+                                - Current Price of New Cars
+                            </li>
+                        </ul>
+                        <div
+                            class="service-rounded-box bg-navy d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 end-0">
+                            <span
+                                class="border border-1 border-light rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right-circle fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-6 col-lg-3">
+                    <div class="card-service h-100 position-relative bg-dark-navy text-white p-3">
+                        <img src="imgs/service1.png" width="140" alt="" />
+                        <h5 class="text-orange pt-3 font-montserrat">
+                            Car Pre-Order
+                        </h5>
+                        <ul class="list-unstyled small font-inter">
+                            <li class="py-1 small">
+                                - Single-Page Title Deed in Buyer’s Name
+                            </li>
+                            <li class="py-1 small">
+                                - Safe and Easy Vehicle Delivery
+                            </li>
+                            <li class="py-1 small">
+                                - No Need for Traditional Contracts
+                            </li>
+                            <li class="py-1 small">
+                                - Official Car Buying and Selling
+                            </li>
+                        </ul>
+                        <div
+                            class="service-rounded-box bg-navy d-flex align-items-center justify-content-center rounded-circle position-absolute top-0 end-0">
+                            <span
+                                class="border border-1 border-light rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right-circle fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services  -->
+    <!-- start new cars -->
+    <section class="my-0 my-lg-5">
+        <div class="container position-relative">
+            <div class="row g-4 g-lg-3 justify-content-center">
+                <div class="new_car_top my-5 py-3 d-flex justify-content-between align-content-center">
+                    <div class="d-flex align-items-center">
+                        <img src="imgs/logo.png" class="h-100" width="50px" alt="" />
+                        <div class="ps-2">
+                            <span class="font-montserrat text-orange fw-bold">Lastest Cars</span>
+                            <p class="font-inter small text-white m-0 d-none d-md-block">
+                                Sale of new and used cars at current market
+                                prices
+                            </p>
+                        </div>
+                    </div>
+                    <a href=""
+                        class="text-decoration-none text-white fw-medium icon-link icon-link-hover font-montserrat d-flex align-items-center">
+                        <span class="small">more</span>
+                        <i class="bi bi-arrow-right-short text-orange d-flex"></i>
+                    </a>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/new-car1.png" width="180px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">FMC T5</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2021 Tehran</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">82,000 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">Blue</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">recently serviced</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">11,000</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/new-car3.png" width="180px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">Foton
+                            g7</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2023 Bayreuth</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">123,750 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">Red</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">recently serviced</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">20,000</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/transfer2.png" width="200px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">BMW
+                            2002</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2002 Dortmund</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">200,500 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">Green</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">a year ago</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">500</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/new-car2.png" width="230px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">AUDI A6</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2016 Paris</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">150,000 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">Silver</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">2 Days ago</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">15,000</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 start-0 translate-middle z-n1">
+                <img src="imgs/new-cars-line.png" style="opacity: 0.5" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- end new cars -->
+    <!-- start pricing  -->
+    <section class="my-4">
+        <div class="container">
+            <div class="pricing-container">
+                <div
+                    class="pricing-box position-relative bg-navy2 p-5 d-flex flex-column align-items-center text-center justify-content-center text-white">
+                    <span class="pricing-title text-orange fs-3 font-montserrat fw-bold">Vehicle Valuation</span>
+                    <p class="col-11 col-lg-8 text-center fw-light my-4">
+                        With Carsara’s Online Price Estimator, you can
+                        easily calculate your car’s value! Our AI-powered
+                        pricing tool accurately determines your car’s price
+                        based on real-time market data.
+                    </p>
+                    <button type="button" class="btn btn-orange rounded-pill w-auto px-4">
+                        Car Price Estimation
+                    </button>
+                    <img src="imgs/pricing-1.png" class="position-absolute start-0 bottom-0 pricing-img-over"
+                        width="100" alt="" />
+                    <img src="imgs/pricing-1.png" class="position-absolute end-0 top-0 pricing-img-over"
+                        style="transform: rotate(180deg)" width="200" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end pricing  -->
+    <!-- start transfer car -->
+    <section class="my-0 my-lg-5">
+        <div class="container position-relative">
+            <div class="row g-4 g-lg-3 justify-content-center">
+                <div class="new_car_top my-5 py-3 d-flex justify-content-between align-content-center">
+                    <div class="d-flex align-items-center">
+                        <img src="imgs/logo.png" class="h-100" width="50px" alt="" />
+                        <div class="ps-2">
+                            <span class="font-montserrat text-orange fw-bold">Car Transfer</span>
+                            <p class="font-inter small text-white m-0">
+                                Pre-order new Cars prices
+                            </p>
+                        </div>
+                    </div>
+                    <a href=""
+                        class="text-decoration-none text-white fw-medium icon-link icon-link-hover font-montserrat d-flex align-items-center">
+                        <span class="small">more</span>
+                        <i class="bi bi-arrow-right-short text-orange d-flex"></i>
+                    </a>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/transfer1.png" width="180px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">fidelity
+                            prime</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2024 Tehran</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">20,000 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">White</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">one week ago</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">7,000</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/car-bmw-i8.png" width="200px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">BMW i8</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2020 Berlin</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">12,000 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">Red</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">recently serviced</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">99,099</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/bmw-m4-gts.png" width="200px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">BMW M4
+                            gts</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2016 München</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">100,000 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">Silver</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">recently serviced</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">100,00</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-car-card col-11 col-md-6 col-lg-3 position-relative my-5">
+                    <div
+                        class="new_car_header w-75 d-flex justify-content-center bg-navy rounded-pill position-absolute top-0 start-50 translate-middle">
+                        <img src="imgs/transfer4.png" width="200px" alt="" />
+                    </div>
+                    <div class="new_car_body bg-dark-navy text-white p-4">
+                        <span class="fs-4 font-montserrat text-orange d-flex justify-content-center pt-5">peugeot
+                            207</span>
+                        <ul class="list-unstyled fw-light font-inter mt-3">
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-geo-alt"></i>
+                                <span class="ps-2">2024 Tehran</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-speedometer2"></i>
+                                <span class="ps-2">55,032 km</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-paint-bucket"></i>
+                                <span class="ps-2">White</span>
+                            </li>
+                            <li class="ps-1 mb-3">
+                                <i class="bi bi-calendar-event"></i>
+                                <span class="ps-2">10 Days ago</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_car_footer bg-dark-navy mt-1 position-relative">
+                        <div class="text-orange fs-5 p-3">
+                            <span class="font-montserrat">5,000</span>
+                            <span class="fw-bold">USD</span>
+                        </div>
+                        <div
+                            class="new-car-rounded-box bg-navy position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center">
+                            <span
+                                class="border border-1 rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-arrow-up-right text-white fs-2"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute bottom-0 start-100 translate-middle z-n1">
+                <img src="imgs/new-cars-line.png" style="opacity: 0.5" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- end transfer car  -->
+    <!-- start brand  -->
+    <section>
+        <div class="container">
+            <div class="bg-dark-navy p-2 rounded-4">
+                <div class="brand-cards d-flex gap-3 overflow-x-auto text-secondary p-3">
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand2.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 fw-bold small">IKCO</span>
+                    </div>
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand1.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 fw-bold small">SAIPA</span>
+                    </div>
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand4.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 small fw-bold">MAZDA</span>
+                    </div>
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand6.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 small fw-bold">MVM</span>
+                    </div>
+                    <div
+                        class="brand-card active bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand5.png" width="40%" alt="" />
+                        <span class="font-inter mt-3">Peugeot</span>
+                    </div>
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand7.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 small fw-bold">HYUNDAI</span>
+                    </div>
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand8.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 fw-bold small">NISSAN</span>
+                    </div>
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand9.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 small fw-bold">JAC</span>
+                    </div>
+                    <div class="brand-card bg-navy col-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="imgs/brand3.png" width="40%" alt="" />
+                        <span class="font-inter mt-3 small fw-bold">HONDA</span>
+                    </div>
+                </div>
+                <div class="row mt-2 g-2 align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <div
+                            class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 text-white small fw-lighter">
+                            <span class="py-1 px-3 rounded-3 border border-1">Pre-oder</span>
+                            <span class="py-1 px-3 rounded-3 border border-1">Used</span>
+                            <span class="py-1 px-3 rounded-3 border border-1">Brand new</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 order-first order-lg-0">
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-orange rounded-pill">
+                                View Cars
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-end align-items-center gap-2 text-white small fw-lighter">
+                            <span class="py-1 px-3 rounded-3 border border-1">207</span>
+                            <span class="py-1 px-3 rounded-3 border border-1">BMW</span>
+                            <span class="py-1 px-3 rounded-3 border border-1">Volkswagen</span>
+                            <span class="py-1 px-3 rounded-3 border border-1">CLS</span>
+                            <span class="py-1 px-3 rounded-3 border border-1">i8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end brand  -->
+    <!-- start feedback -->
+    <section class="py-5 my-0 my-lg-4">
+        <div class="container">
+                <div class="sec_top my-3 d-flex justify-content-between align-content-center">
+                    <div class="d-flex align-items-center">
+                        <img src="imgs/logo.png" class="h-100" width="50px" alt="" />
+                        <div class="ps-2">
+                            <span class="font-montserrat text-orange fw-bold">User Reviews</span>
+                            <p class="font-inter small text-white m-0">
+                                Car Buyers and Sellers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel_feedback" class="carousel position-relative slide bg-dark-navy rounded-4">
+                    <div class="carousel-inner py-3">
+                        <div class="carousel-item active my-3">
+                            <div
+                                class="text-white text-center d-flex flex-column justify-content-center align-items-center">
+                                <div class="member_img_box bg-orange rounded-circle position-relative">
+                                    <img src="imgs/member1.png" class="img-fluid rounded-circle position-absolute"
+                                        width="70px" alt="user" />
+                                </div>
+                                <p class="text-inter mb-0 col-11 col-md-10 col-lg-7 lh-lg fw-light py-2 py-lg-3">
+                                    I recently purchased a car through this platform, and the process was
+                                    hassle-free. The pricing was
+                                    transparent, and I felt confident in my decision. Highly recommend it to anyone
+                                    looking to buy or sell a car!
+                                    I’ll come back for my next purchase.
+                                </p>
+                                <i class="bi bi-quote text-orange fs-1"></i>
+                                <span class="font-montserrat small">John Doe</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item my-3">
+                            <div
+                                class="text-white text-center d-flex flex-column justify-content-center align-items-center">
+                                <div class="member_img_box bg-orange rounded-circle position-relative">
+                                    <img src="imgs/user-2.png" class="img-fluid rounded-circle position-absolute"
+                                        width="70px" alt="user" />
+                                </div>
+                                <p class="text-inter mb-0 col-11 col-md-10 col-lg-7 lh-lg fw-light py-2 py-lg-3">
+                                    Selling my car here was a great experience. The team guided me through every step and made sure I got the best deal possible. I’ll definitely use this site again in the future! The whole process was simple and stress-free.
+                                </p>
+                                <i class="bi bi-quote text-orange fs-1"></i>
+                                <span class="font-montserrat small">Smith Mackey</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item my-3">
+                            <div
+                                class="text-white text-center d-flex flex-column justify-content-center align-items-center">
+                                <div class="member_img_box bg-orange rounded-circle position-relative">
+                                    <img src="imgs/user-3.png" class="img-fluid rounded-circle position-absolute"
+                                        width="70px" alt="user" />
+                                </div>
+                                <p class="text-inter mb-0 col-11 col-md-10 col-lg-7 lh-lg fw-light py-2 py-lg-3">
+                                    I used this website to both buy and sell cars, and I’m very satisfied. Everything was professional, from the valuation to the final transaction. A reliable and trustworthy platform! It saved me so much time compared to traditional methods.
+                                </p>
+                                <i class="bi bi-quote text-orange fs-1"></i>
+                                <span class="font-montserrat small">Sara Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="bg-navy d-flex align-items-center justify-content-center rounded-circle border-0 position-absolute top-50 start-0 translate-middle" style="width: 50px; height: 50px;" type="button" data-bs-target="#carousel_feedback" data-bs-slide="prev">
+                        <span class="border border-1 border-light rounded-circle d-flex justify-content-center" style="width: 80%; height: 80%;" aria-hidden="true">
+                            <i class="bi bi-chevron-left text-white fs-4"></i>
+                        </span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="bg-navy d-flex align-items-center justify-content-center rounded-circle border-0 position-absolute top-50 start-100 translate-middle" style="width: 50px; height: 50px;" type="button" data-bs-target="#carousel_feedback" data-bs-slide="next">
+                        <span class="border border-1 border-light rounded-circle d-flex justify-content-center" style="width: 80%; height: 80%;" aria-hidden="true">
+                            <i class="bi bi-chevron-right text-white fs-4"></i>
+                        </span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        </div>
+    </section>
+    <!-- end feedback -->
+    <!-- start footer  -->
+    <footer class="bg-dark-navy text-white pt-4">
+        <div class="d-flex flex-column px-3">
+            <div class="position-relative footer_img_box rounded-pill mx-auto mx-lg-0">
+                <div class="rounded-pill position-absolute py-2 ps-0 pe-4 bg-navy w-100 h-100 d-flex align-items-center justify-content-center">
+                    <img src="imgs/Group 1.png" class="" width="180" alt="">
+                </div>
+            </div>
+        </div>  
+            <div>
+                <p class="font-inter small lh-lg text-center text-lg-start col-12 col-lg-9 mx-auto my-4">We are committed to improving the car buying and selling experience by providing a secure and user-friendly platform. Our goal is to make transactions as simple and reliable as possible. Ensuring a smooth and worry-free process has always been our top priority.</p>
+            </div>
+            <div class="d-block d-lg-flex p-3 mx-2 justify-content-between">
+                <span class="font-inter">All rights reserved © 2025 
+                    <a href="#" class="footer_name text-decoration-none ms-2 text-orange font-montserrat">Carsara</a>
+                    By Iliya Mosadegh
+                </span>
+                <ul class="list-unstyled footer_icons py-2 py-lg-0 d-flex gap-3 list-inline">
+                    <li>
+                        <a href="">
+                            <i class="bi bi-linkedin fs-4 text-white"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="bi bi-github fs-4 text-white"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="bi bi-telegram fs-4 text-white"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+:root {
+    --orange-color: #EC620C;
+    --navy-color: #141B34;
+    --dark-navy-color: #090E23;
+    --navy-color-2: #090E2380;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.text-orange{
+    color: var(--orange-color)!important;
+}
+
+.bg-navy {
+    background-color: var(--navy-color);
+}
+
+.bg-orange {
+    background-color: var(--orange-color);
+}
+
+.bg-dark-navy {
+    background-color: var(--dark-navy-color);
+}
+
+.bg-navy2{
+    background-color: var(--navy-color-2);
+}
+
+.btn-orange{
+    color: white;
+    background: linear-gradient(#F66B15, #D0540F);
+}
+
+.btn-orange:hover {
+    background: linear-gradient(#FF2B00, #FF2B00);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(236, 98, 12, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+/* start nav  */
+.main_nav a{
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.main_nav a:hover{
+    color: white;
+}
+
+.main_nav a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--orange-color);
+    transition: width 0.3s ease;
+}
+
+
+.main_nav a:not(.btn):hover::after{
+    width: 90%;
+}
+
+.divider {
+    border-left: 1px dashed rgba(255, 255, 255, 0.6);
+    height: 20px;
+}
+/* end nav  */
+
+/* start header  */
+.img-over-right{
+    right: 0;
+    z-index: -1;
+    opacity: 0.3;
+    transform: rotate(180deg);
+}
+
+.img-over-left{
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    transform: rotate(180deg);
+}
+/* end header  */
+/* start services */
+.card-service{
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.service-rounded-box{
+    width: 70px;
+    height: 70px;
+}
+.service-rounded-box span{
+    width: 80%;
+    height: 80%;
+}
+
+.card-service:hover .service-rounded-box span{
+    color: var(--orange-color)!important;
+    border-color: var(--orange-color)!important;
+    transform: rotate(900deg);
+    transition: transform 1s ease-in-out;
+}
+/* end services */
+/* start new car  */
+.new_car_body{
+    border-radius: 50px 50px 50px 0px ;
+    border-left: 2px solid transparent;
+}
+
+.new_car_footer{
+    border-radius: 0px 50px 50px 50px ;
+    border-left: 2px solid transparent;
+}
+
+.new-car-rounded-box{
+    width: 62px;
+    height: 62px;
+}
+
+.new-car-rounded-box span{
+    width: 80%;
+    height: 80%;
+}
+
+.new_car_header{
+    border-left: 3px solid var(--orange-color);
+}
+
+.new-car-card:hover .new-car-rounded-box i{
+    color: var(--orange-color)!important;
+}
+
+.new-car-card:hover .new-car-rounded-box span{
+    color: var(--orange-color)!important;
+    border-color: var(--orange-color)!important;
+}
+
+.new-car-card:hover .new_car_body, .new-car-card:hover .new_car_footer{
+    border-left: 2px solid var(--orange-color);
+    box-shadow: 0 8px 15px rgba(236, 98, 12, 0.3);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+/* end new car  */
+/* start pricing  */
+.pricing-box{
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.pricing-img-over{
+    filter: blur(5px);
+    z-index: -1;
+}
+
+
+.pricing-container{
+    padding: 5px;
+    border-radius: 40px;
+    z-index: 1;
+    background: linear-gradient(180deg, transparent 95%, var(--orange-color));
+    cursor: pointer;
+    backdrop-filter: opacity(0);
+}
+
+.pricing-container:hover .pricing-title{
+    color: white!important;
+}
+
+.pricing-container:hover .pricing-img-over {
+    filter: blur(0px);
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .pricing-container{
+        background: none;
+    }
+}
+/* end pricing */
+/* start brand */
+.brand-card{
+    border-radius: 25px;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    cursor: pointer;
+
+}
+
+.brand-card img {
+    filter: grayscale(100%) brightness(60%);
+}
+
+.brand-card.active{
+    min-width: 140px;
+    min-height: 140px;
+    max-width: 140px;
+    max-height: 140px;
+    background: linear-gradient(180deg, #0E142C 24.44%, #542E25 89.88%);
+    border: 1px solid var(--orange-color);
+}
+
+.brand-card.active span{
+    color: white !important;
+}
+
+.brand-card.active img {
+    filter: grayscale(0%) brightness(100%);
+}
+
+.brand-card:hover span {
+    color: white !important;
+}
+
+.brand-card:hover img {
+    color: white !important;
+    filter: grayscale(0%) brightness(100%);
+}
+
+.brand-card:not(.active):hover{
+    border: 2px solid var(--orange-color);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    background: linear-gradient(180deg, #0E142C 24.44%, #542E25 89.88%);
+}
+
+/* width */
+.brand-cards::-webkit-scrollbar {
+    height: 5px;
+}
+
+/* Track */
+.brand-cards::-webkit-scrollbar-track {
+    background: var(--navy-color);
+    height: 5px;
+}
+
+/* Handle */
+.brand-cards::-webkit-scrollbar-thumb {
+    background: #b9b9b9;
+}
+/* end brand */
+/* start feedback */
+.member_img_box{
+    width: 70px;
+    height: 70px;
+}
+
+.member_img_box img{
+    border-color: var(--navy-color)!important;
+    top: -2px;
+    left: -2px;
+}
+
+@media (max-width: 768px) {
+    #carousel_feedback .carousel-item {
+        min-height: 360px;     /* به نیازت تنظیم کن */
+    }
+}
+/* end feedback */
+/* start footer */
+.footer_img_box{
+    background: linear-gradient(transparent , var(--orange-color));
+    height: 60px;
+    width: 220px;
+    margin-top: -60px;
+}
+
+.footer_img_box>div{
+    top: -2px;
+}
+
+.footer_icons li a i:hover{
+    color: var(--orange-color)!important;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(236, 98, 12, 0.6);
+    transition: all 0.3s ease;
+}
+
+.footer_name:hover{
+    color:#cf612a!important;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(236, 98, 12, 0.6);
+    transition: all 0.3s ease;
+}
+/* end footer */
